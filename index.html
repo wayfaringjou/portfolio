@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Joel Del Cueto's Portfolio</title>
+  <!-- Use normalize.css to set the same defaults in all browsers -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
     type="text/css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
@@ -13,7 +14,9 @@
 
 <body>
   <div class="container">
+    <!-- Start header -->
     <header>
+      <!-- Small navigation bar with logo and buttons -->
       <nav>
         <img src="images/logo.svg" class="logo">
         <ul>
@@ -21,6 +24,7 @@
           <li class=""><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <!-- Greeting as header also links to the rest of the page -->
       <div class="wrapper">
         <h1>
           <strong>Hello, I'm <a href="#introduction">Joel</a>.</strong>
@@ -34,6 +38,7 @@
       </div>
     </header>
     <main>
+      <!-- Short introduction -->
       <section id="introduction">
         <div class="wrapper">
           <div class="left-frame">
@@ -46,6 +51,7 @@
             functional and useful products. </p>
         </div>
       </section>
+      <!-- More about myself and interests -->
       <section id="about">
         <div class="wrapper">
           <h2>About me</h2>
@@ -64,7 +70,7 @@
             sure I can employ the skills I'm learning at Thinkful to build your digital product.</p>
         </div>
       </section>
-
+      <!-- Contact information -->
       <section id="contact">
         <div class="wrapper">
           <h2>Contact me</h2>
@@ -77,8 +83,7 @@
           </ul>
           <hr>
           <div class="map">
-            <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCSOFCzTojLGmVax3xoMZkyoWoLpa8Ej10
-          &q=Lakeland,Florida" allowfullscreen>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112664.092014643!2d-82.01739927703309!3d28.062569262904468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd38b2df0f0007%3A0x29d1320fb8a2d508!2sLakeland%2C%20FL%2C%20USA!5e0!3m2!1sen!2spr!4v1602061727502!5m2!1sen!2spr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
             </iframe>
           </div>
       </section>
@@ -90,7 +95,4 @@
     </footer>
   </div>
 </body>
-
-<script src="script.js"></script>
-
 </html>

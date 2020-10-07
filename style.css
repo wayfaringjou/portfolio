@@ -4,7 +4,7 @@
 * {
   box-sizing: border-box;
 }
-
+/* Base containers */
 body,
 footer {
   background-color: #151a1b;
@@ -24,7 +24,7 @@ footer {
   margin: auto;
   padding: 20px;
 }
-
+/* Headings, paragraphs and links */
 h1,
 h2,
 h3 {
@@ -32,7 +32,6 @@ h3 {
   font-size: 72px;
   font-weight: 300;
   letter-spacing: -1.5px;
-  /*margin: 0px;*/
 }
 
 h2 {
@@ -61,7 +60,7 @@ a {
 a:hover {
   text-decoration-color: #33b1f5;
 }
-
+/* Header */
 header .wrapper {
   padding: 42px;
   margin-top: 96px;
@@ -84,7 +83,7 @@ header .disclaimer {
 header hr {
   margin-top: 70px;
 }
-
+/* Nav */
 nav .logo {
   width: 125px;
   float: left;
@@ -116,7 +115,7 @@ nav a:hover {
   background-color: black;
   color: white;
 }
-
+/*  Introduction Section */
 #introduction {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -137,7 +136,7 @@ nav a:hover {
   margin-top: 0px;
   margin-bottom: 20px;
 }
-
+/* About section */
 #about {
   background-color: lightgray;
   background-image: url("images/dawn.jpg");
@@ -151,7 +150,7 @@ nav a:hover {
   background-color: white;
   border-left: 10px solid #151a1b;
 }
-
+/* Contact Section*/
 #contact .map {
   width: 640px;
   margin: 48px auto;
@@ -172,7 +171,7 @@ nav a:hover {
   display: inline;
   margin-right: 48px;
 }
-
+/* Footer */
 footer h3 {
   color: white;
   font-size: 24px;
