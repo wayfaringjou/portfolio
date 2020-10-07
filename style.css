@@ -44,7 +44,8 @@ h3 {
   letter-spacing: 0px;
 }
 
-p {
+p,
+li {
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -52,16 +53,27 @@ p {
   line-height: 24px;
 }
 
-a {
+a,
+a:link {
   color: black;
   text-decoration-color: #64d4eb;
+}
+
+a:visited {
+  text-decoration-color: #ae33f5;
 }
 
 a:hover {
   text-decoration-color: #33b1f5;
 }
+
+a:active {
+  text-decoration-color: #f5f233;
+}
+
 /* Header */
 header .wrapper {
+  height: 450px;
   padding: 42px;
   margin-top: 96px;
   margin-bottom: 20px;
@@ -71,6 +83,19 @@ header h1 {
   margin: 0px;
   line-height: 78px;
   text-align: center;
+}
+
+header a:link,
+header a:visited {
+  text-decoration-color: #64d4eb;
+}
+
+header a:hover {
+  text-decoration-color: #33b1f5;
+}
+
+header a:active {
+  text-decoration-color: #f5f233;
 }
 
 header .disclaimer {
@@ -150,6 +175,7 @@ nav a:hover {
   background-color: white;
   border-left: 10px solid #151a1b;
 }
+
 /* Contact Section*/
 #contact .map {
   width: 640px;
@@ -174,6 +200,7 @@ nav a:hover {
 #contact li {
   display: inline;
   margin-right: 48px;
+  vertical-align: middle;
 }
 /* Footer */
 footer h3 {
