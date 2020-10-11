@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
     <title>Joel Del Cueto's Portfolio</title>
     <!-- Use normalize.css to set the same defaults in all browsers -->
     <link
@@ -11,7 +11,7 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="styleflex.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
@@ -19,139 +19,210 @@
       <!-- Start header -->
       <header>
         <!-- Small navigation bar with logo and buttons -->
-        <nav>
-          <img
-            src="images/logo.svg"
-            alt="Image of my signature."
-            class="logo"
-          />
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li class=""><a href="#contact">Contact</a></li>
-          </ul>
+        <nav class="group group-wide">
+          <div class="item logo">
+            <img
+              src="images/logo.svg"
+              alt="Image of my signature."
+              class="logo"
+            />
+          </div>
+          <div class="item">
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Greeting as header also links to the rest of the page -->
         </nav>
-        <!-- Greeting as header also links to the rest of the page -->
-        <div class="wrapper">
-          <h1>
-            <strong>Hello, I'm <a href="#introduction">Joel</a>.</strong>
-            <br />
-            I'm a <a href="#about">software developer</a>*
-            <br />
-            living in <a href="#contact">Lakeland, Fl</a>.
-          </h1>
-          <p class="disclaimer">*Currently learning.</p>
+        <div class="group hero">
+          <div class="item">
+            <h1>
+              <strong>Hello, I'm <a href="#introduction">Joel</a>.</strong>
+              <br />
+              I'm a <a href="#about">software developer</a>*
+              <br />
+              living in <a href="#contact">Lakeland, Fl</a>.
+            </h1>
+          </div>
+          <div class="item">
+            <p class="disclaimer">*Currently learning.</p>
+          </div>
           <hr />
         </div>
       </header>
+
       <main>
         <!-- Short introduction -->
         <section id="introduction">
-          <div class="wrapper">
-            <div class="left-frame">
+          <div class="group">
+            <div class="item">
               <img src="images/me.jpg" alt="My picture." class="image-circle" />
             </div>
-            <h2>Nice to meet you!</h2>
-            <p>
-              I'm Joel Del Cueto. I'm a philosophy and theology graduate from
-              Puerto Rico with a passion for programming and software
-              development. My philosophical and theological work taught me to be
-              steadfast in looking for clear and simple answers to difficult
-              questions. I hope to bring that kind of perseverance to crafting
-              functional and useful products.
-            </p>
+            <div class="item item-triple">
+              <h2>Nice to meet you!</h2>
+              <p>
+                I'm Joel Del Cueto. I'm a philosophy and theology graduate from
+                Puerto Rico with a passion for programming and software
+                development. My philosophical and theological work taught me to
+                be steadfast in looking for clear and simple answers to
+                difficult questions. I hope to bring that kind of perseverance
+                to crafting functional and useful products.
+              </p>
+            </div>
           </div>
         </section>
         <!-- More about myself and interests -->
         <section id="about">
-          <div class="wrapper">
+          <div class="group group-title">
             <h2>About me</h2>
-            <p>
-              Since 2011 I've worked as a priest in several communities in
-              Madrid and Puerto Rico. This job has given me the chance to know
-              and work closely with many people towards the betterment of
-              personal and social struggles. These experiences have impressed
-              upon me the importance of pursuing what you love and being
-              truthful to yourself. I like to work on projects that foster
-              community development, promote education and opportunities for
-              people, or provide beneficial services. Some of my other interests
-              are:
-            </p>
-            <ol>
-              <li>Nature</li>
-              <li>Science</li>
-              <li>Music</li>
-            </ol>
+          </div>
+          <div class="group">
+            <div class="item item-double">
+              <p>
+                Since 2011 I've worked as a priest in several communities in
+                Madrid and Puerto Rico. This job has given me the chance to know
+                and work closely with many people towards the betterment of
+                personal and social struggles.
+              </p>
 
-            <p>
-              I enrolled in
-              <a href="https://thinkful.com" target="_blank">Thinkful</a> with
-              the interest of taking the first step towards a new career in
-              software development. I'm very excited to meet new people and
-              share new experiences in this new field of work!
-            </p>
+              <p>
+                These experiences have impressed upon me the importance of
+                pursuing what you love and being truthful to yourself. I like to
+                work on projects that foster community development, promote
+                education and opportunities for people, or provide beneficial
+                services.
+              </p>
+              <p>
+                I enrolled in
+                <a href="https://thinkful.com" target="_blank">Thinkful</a> with
+                the interest of taking the first step towards a new career in
+                software development. I'm very excited to meet new people and
+                share new experiences in this new field of work!
+              </p>
 
+              <p>
+                If you're looking to hire a new hard-working developer feel free
+                to <a href="#contact">contact me</a>! I'm sure I can employ my
+                experiences and the skills I'm sharpening at Thinkful to build
+                your digital product and move your project forward.
+              </p>
+            </div>
+          </div>
+          <div class="group group-interests">
+            <div class="item item-image">
+              <img src="images/guitarw.jpg" />
+            </div>
+            <div class="item item-image">
+              <img src="images/juandiegopondw.jpg" />
+            </div>
+            <div class="item item-image">
+              <img src="images/pinegrovebeach.gif" />
+            </div>
+          </div>
+          <div class="group description">
             <p>
-              If you're looking to hire a new hard-working developer feel free
-              to <a href="#contact">contact me</a>! I'm sure I can employ my
-              experiences and the skills I'm sharpening at Thinkful to build
-              your digital product and move your project forward.
+              When I'm not working on software I enjoy playing my guitar,
+              hiking, and going to the beach.
             </p>
           </div>
+          <!-- Possible examples of my work -->
         </section>
-        <!-- Contact information -->
+        <section id="work">
+          <div class="group group-title">
+            <h2>Work</h2>
+          </div>
+          <div class="group">
+            <div class="item">
+              <img src="images/small-business.jpg" />
+              <h3>Small Business Website</h3>
+              <hr />
+              <p>
+                Fullstack design for a small business website using html, css,
+                and JavaScript.
+              </p>
+              <a href="https://github.com/wayfaringjou">Project Repo</a>
+            </div>
+            <div class="item">
+              <img src="images/travel-app.jpg" />
+              <h3>Traveling App</h3>
+              <hr />
+              <p>
+                Web application back-end using JavaScript for a traveling app
+                project.
+              </p>
+              <a href="https://github.com/wayfaringjou">Project Repo</a>
+            </div>
+          </div>
+          <div class="group">
+            <div class="item">
+              <img src="images/study-group.jpg" />
+              <h3>e-Learning Platform</h3>
+              <hr />
+              <p>
+                Worked on documentation and writing tests to improve code base
+                quality.
+              </p>
+              <a href="https://github.com/wayfaringjou">Project Repo</a>
+            </div>
+            <div class="item">
+              <img src="images/weather.jpg" />
+              <h3>Weather Tracking App</h3>
+              <hr />
+              <p>Full stack work with html, css and JavaScript.</p>
+              <a href="https://github.com/wayfaringjou">Project Repo</a>
+            </div>
+          </div>
+        </section>
+        <!-- Contact Info -->
         <section id="contact">
-          <div class="wrapper">
+          <div class="group group-title">
             <h2>Contact me</h2>
-            <p>Reach out! Feel free to contact me or follow:</p>
-            <ul>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/joel-del-cueto-a8ba031b8"
-                  target="_blank"
-                  ><img
-                    src="images/LI-Logo.png"
-                    alt="LinkedIn Logo icon."
-                    style="width: 100px"
-                /></a>
-              </li>
-              <li>
-                <a href="https://github.com/wayfaringjou" target="_blank"
-                  ><img
-                    src="images/GitHub_Logo.png"
-                    alt="GitHub Logo icon."
-                    style="width: 100px"
-                /></a>
-              </li>
-              <li>
-                <a href="mailto:wayfaringjou@gmail.com" target="_blank"
-                  ><img
-                    src="images/email.png"
-                    alt="Email envelope icon."
-                    style="width: 50px"
-                /></a>
-              </li>
-            </ul>
-            <hr />
-            <div class="map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112664.092014643!2d-82.01739927703309!3d28.062569262904468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd38b2df0f0007%3A0x29d1320fb8a2d508!2sLakeland%2C%20FL%2C%20USA!5e0!3m2!1sen!2spr!4v1602061727502!5m2!1sen!2spr"
-                width="600"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
-              >
-              </iframe>
+          </div>
+          <div class="group">
+            <div class="item item-double">
+              <p>Reach out! Feel free to contact me or follow:</p>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/joel-del-cueto-a8ba031b8"
+                    target="_blank"
+                    ><img src="images/LI-Logo.png" alt="LinkedIn Logo icon."
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://github.com/wayfaringjou" target="_blank"
+                    ><img src="images/GitHub_Logo.png" alt="GitHub Logo icon."
+                  /></a>
+                </li>
+                <li>
+                  <a href="mailto:wayfaringjou@gmail.com" target="_blank"
+                    ><img src="images/email.png" alt="Email envelope icon."
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="item">
+              <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112664.092014643!2d-82.01739927703309!3d28.062569262904468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd38b2df0f0007%3A0x29d1320fb8a2d508!2sLakeland%2C%20FL%2C%20USA!5e0!3m2!1sen!2spr!4v1602061727502!5m2!1sen!2spr"
+                  width="360"
+                  height="360"
+                  style="border: 0"
+                  allowfullscreen=""
+                  aria-hidden="false"
+                  tabindex="0"
+                >
+                </iframe>
+              </div>
             </div>
           </div>
         </section>
       </main>
-      <footer>
-        <div class="wrapper">
-          <h3>© Joel Del Cueto</h3>
-        </div>
-      </footer>
     </div>
+    <footer>
+      <h3>© Joel Del Cueto</h3>
+    </footer>
   </body>
 </html>

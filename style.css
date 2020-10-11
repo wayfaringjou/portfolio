@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css5?family=Crimson+Pro&family=PT+Sans&display=swap");
 
 /* Set ALL HTML elements with border-box sizing */
 * {
   box-sizing: border-box;
 }
+
 /* Base containers */
 body,
 footer {
@@ -11,37 +12,71 @@ footer {
 }
 
 .container {
-  width: 1200px;
-  margin: 0px;
-  margin-top: 27px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 27px auto 0;
   background-color: white;
 }
 
-.wrapper {
-  width: 960px;
-  margin: auto;
+.group {
+  margin: 0 auto;
   padding: 20px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
+
+.item {
+  flex: 1;
+  margin: 20px auto;
+}
+
+.item-double {
+  flex: 2;
+}
+
+.item-triple {
+  flex: 3;
+}
+
+.group-title {
+  background-color: #ffffff00;
+  border: 0;
+  padding: 0;
+}
+
+.group-title h2 {
+  margin: 0;
+  background-color: black;
+  color: white;
+  padding: 0 20px;
+}
+
+.image-circle {
+  width: 200px;
+  border-radius: 50%;
+}
+
+section {
+  padding: 30px 0;
+}
+
 /* Headings, paragraphs and links */
 h1,
 h2,
 h3 {
   font-family: "Crimson Pro", Georgia, "Times New Roman", Times, serif;
-  font-size: 72px;
+  font-size: 40px;
   font-weight: 300;
   letter-spacing: -1.5px;
 }
 
 h2 {
-  font-size: 60px;
+  font-size: 38px;
 }
 
 h3 {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 400;
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
 p,
@@ -49,8 +84,8 @@ li {
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 400;
-  letter-spacing: 0.5px;
-  line-height: 24px;
+  letter-spacing: 0.25px;
+  line-height: 22px;
 }
 
 a,
@@ -71,140 +106,348 @@ a:active {
   text-decoration-color: #f5f233;
 }
 
-/* Header */
-header .wrapper {
-  height: 450px;
-  padding: 42px;
-  margin-top: 96px;
-  margin-bottom: 20px;
+img {
+  width: 100%;
 }
 
-header h1 {
-  margin: 0px;
-  line-height: 78px;
-  text-align: center;
+/* Nav */
+nav .logo {
+  max-width: 75px;
+  margin: 0 auto 5px;
 }
 
-header a:link,
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-right: 15px;
+  display: inline;
+}
+
+nav a,
+nav a:link {
+  text-decoration: none;
+  padding: 5px;
+  border: 3px solid black;
+  background-color: black;
+  color: white;
+}
+
+nav a:hover {
+  background-color: white;
+  border: 3px solid black;
+  color: black;
+}
+
+/* Hero */
+.hero h1 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: left;
+}
+
+.hero a:link,
 header a:visited {
   text-decoration-color: #64d4eb;
 }
 
-header a:hover {
+.hero a:hover {
   text-decoration-color: #33b1f5;
 }
 
-header a:active {
+.hero a:active {
   text-decoration-color: #f5f233;
 }
 
-header .disclaimer {
+.hero .disclaimer {
   font-family: "Crimson Pro", Georgia, "Times New Roman", Times, serif;
-  font-size: 24px;
+  font-size: 20px;
   color: gray;
   text-align: center;
 }
 
 header hr {
-  margin-top: 70px;
-}
-/* Nav */
-nav .logo {
-  width: 125px;
-  float: left;
-  margin: 18px 30px;
+  width: 100%;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 50px 20px 0px 20px;
-}
-
-nav li {
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  text-transform: uppercase;
-  margin-right: 20px;
-  display: inline;
-  float: right;
-}
-
-nav a {
-  text-decoration: none;
-  padding: 10px;
-  border: 3px solid black;
-}
-
-nav a:hover {
-  background-color: black;
-  color: white;
-}
 /*  Introduction Section */
-#introduction {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.left-frame {
-  width: 200px;
-  float: left;
-  margin-right: 30px;
-}
-
-.image-circle {
-  width: 200px;
-  border-radius: 50%;
-}
 
 #introduction h2 {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 20px;
 }
+
 /* About section */
+
 #about {
   background-color: lightgray;
   background-image: url("images/dawn.jpg");
   background-size: cover;
   background-attachment: fixed;
-  background-position-y: 0px;
-  padding: 48px 0px;
+  background-position-y: 0;
+  padding: 48px 0;
 }
 
-#about .wrapper {
+#about .group {
   background-color: white;
   border-left: 10px solid #151a1b;
 }
 
-/* Contact Section*/
-#contact .map {
-  width: 640px;
-  margin: 48px auto;
+#about .group-interests {
+  background-color: #ffffff00;
+  border: 0;
+  padding: 20px 0 0;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
+#about .item {
+  margin: 0 20px 0 0;
+}
+
+#about .item p {
+  margin: 10px;
+}
+
+#about .group-interests p {
+  background-color: white;
+  margin: 10px 0 0;
+  padding: 15px;
+}
+
+#about .item-image {
+  margin: 0 20px 0 0;
+  overflow: hidden;
+}
+
+#about .item-image img {
+  border-radius: 2%;
+}
+
+#about .item-image:last-of-type {
+  margin-right: 0;
+}
+
+#about .item-image h3 {
+  margin: -5px 0 0;
+  font-size: 20px;
+  text-align: right;
+  background-color: black;
+  color: white;
+  padding: 2px 10px;
+  font-family: "PT Sans";
+  max-width: 75%;
+  float: right;
+}
+
+#about .description {
+  padding: 0 20px;
+  color: white;
+  background-color: black;
+  border: 0;
+  margin-top: 5px;
+}
+
+#about .description p {
+  font-size: 14px;
+}
+
+/* Work */
+#work {
+  padding: 0 0 30px;
+}
+
+#work .group {
+  padding: 20px 0;
+}
+
+#work .item {
+  margin: 0 50px;
+  padding: 20px;
+  border: 2px solid #000000;
+  box-shadow: 10px 10px #64d4eb;
+}
+
+#work .item:last-of-type {
+  margin: 40px 50px 0;
+}
+
+#work h3 {
+  margin: 20px 0;
+  font-size: 36px;
+}
+
+#work a,
+nav a:link {
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  padding: 5px;
+  margin-top: 5px;
+  border: 3px solid black;
+  background-color: black;
+  color: white;
+}
+
+#work a:hover {
+  background-color: white;
+  border: 3px solid black;
+  color: black;
+}
+
+/* Contact */
 #contact iframe {
   border: 0;
 }
 
 #contact p {
-  text-align: center;
+  text-align: left;
+  margin-top: 0;
 }
 
 #contact ul {
   list-style-type: none;
-  margin: 42px;
-  padding: 0px;
+  margin: 42px auto;
+  padding: 0;
   text-align: center;
 }
 
 #contact li {
   display: inline;
-  margin-right: 48px;
+  margin-right: 20px;
   vertical-align: middle;
 }
+
+#contact li img {
+  width: unset;
+  max-width: 100px;
+  max-height: 34px;
+}
+
 /* Footer */
 footer h3 {
   color: white;
   font-size: 24px;
   text-align: center;
+}
+
+/* Desktop settings */
+@media all and (min-width: 800px) {
+  .container {
+    max-width: 1200px;
+    margin: 27px auto 0;
+  }
+
+  .group {
+    max-width: 960px;
+    flex-direction: row;
+  }
+
+  .group-wide {
+    max-width: 1200px;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Crimson Pro", Georgia, "Times New Roman", Times, serif;
+    font-size: 72px;
+    font-weight: 300;
+    letter-spacing: -1.5px;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  p,
+  li {
+    font-family: "PT Sans", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+  }
+
+  nav .logo {
+    max-width: 125px;
+    margin: 0px auto;
+  }
+
+  nav ul {
+    margin: 25px 0 0;
+  }
+
+  nav li {
+    font-size: 24px;
+    float: right;
+  }
+
+  nav a,
+  nav a:link {
+    padding: 10px;
+    border: 3px solid black;
+    background-color: white;
+    color: black;
+  }
+
+  nav a:hover {
+    background-color: black;
+    border: 3px solid black;
+    color: white;
+  }
+
+  /* Hero */
+  .hero h1 {
+    margin: 0;
+    font-size: 72px;
+    line-height: 72px;
+    text-align: left;
+  }
+
+  .hero .disclaimer {
+    font-size: 24px;
+  }
+
+  /* About */
+  #about .description p {
+    font-size: 16px;
+  }
+
+  /* Work */
+  #work {
+    padding-top: 30px;
+  }
+
+  #work a {
+    font-size: 24px;
+  }
+
+  #work .item:last-of-type {
+    margin: 0;
+  }
+
+  #contact ul {
+    text-align: left;
+  }
+
+  #contact li img {
+    max-width: 100px;
+  }
 }
