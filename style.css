@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css5?family=Crimson+Pro&family=PT+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=PT+Sans&display=swap");
 
 /* Set ALL HTML elements with border-box sizing */
 * {
@@ -197,7 +197,7 @@ header hr {
 
 #about .group {
   background-color: white;
-  border-left: 10px solid #151a1b;
+  border-left: 10px solid black;
 }
 
 #about .group-interests {
