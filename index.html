@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joel Del Cueto's Portfolio</title>
-    <!-- Use normalize.css to set the same defaults in all browsers -->
+
+    <!--Use normalize.css to set the same defaults in all browsers-->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       rel="stylesheet"
@@ -13,54 +13,48 @@
     />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-
   <body>
     <div class="container">
-      <!-- Start header -->
       <header>
-        <!-- Small navigation bar with logo and buttons -->
-        <nav class="group group-wide">
-          <div class="item logo">
+        <!--Signature "logotype"-->
+        <div id="logo">
+          <a href="#banner">
             <img
               src="images/logo.svg"
               alt="Image of my signature."
               class="logo"
             />
-          </div>
-          <div class="item">
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#work">Work</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <!-- Greeting as header also links to the rest of the page -->
-        </nav>
-        <div class="group hero">
-          <div class="item">
-            <h1>
-              <strong>Hello, I'm <a href="#introduction">Joel</a>.</strong>
-              <br />
-              I'm a <a href="#about">software developer</a>*
-              <br />
-              living in <a href="#contact">Lakeland, Fl</a>.
-            </h1>
-          </div>
-          <div class="item">
-            <p class="disclaimer">*Currently learning.</p>
-          </div>
-          <hr />
+          </a>
         </div>
+        <!--Navigation-->
+        <nav>
+          <ul>
+            <li><a href="#about" class="button">About</a></li>
+            <li><a href="#work" class="button">Work</a></li>
+            <li><a href="#contact" class="button">Contact</a></li>
+          </ul>
+        </nav>
+        <!--Header banner-->
+        <section id="banner">
+          <h1>
+            Hello, I'm <a href="#introduction">Joel</a>.
+            <br />
+            I'm a <a href="#about">software developer</a>*
+            <br />
+            living in <a href="#contact">Lakeland, Fl</a>.
+          </h1>
+          <p class="disclaimer">*Currently learning.</p>
+          <hr />
+        </section>
       </header>
-
       <main>
-        <!-- Short introduction -->
+        <!--Intro and greeting-->
         <section id="introduction">
           <div class="group">
             <div class="item">
               <img src="images/me.jpg" alt="My picture." class="image-circle" />
             </div>
-            <div class="item item-triple">
+            <div class="item-triple">
               <h2>Nice to meet you!</h2>
               <p>
                 I'm Joel Del Cueto. I'm a philosophy and theology graduate from
@@ -72,135 +66,179 @@
               </p>
             </div>
           </div>
+          <hr />
         </section>
-        <!-- More about myself and interests -->
+        <!--Some info about myself and interests-->
         <section id="about">
-          <div class="group group-title">
-            <h2>About me</h2>
-          </div>
-          <div class="group">
-            <div class="item item-double">
-              <p>
-                Since 2011 I've worked as a priest in several communities in
-                Madrid and Puerto Rico. This job has given me the chance to know
-                and work closely with many people towards the betterment of
-                personal and social struggles.
-              </p>
+          <h2>About me</h2>
+          <p class="first-blk">
+            Since 2011 I've worked as a priest in several communities in Madrid
+            and Puerto Rico. This job has given me the chance to know and work
+            closely with many people towards the betterment of personal and
+            social struggles.
+          </p>
 
-              <p>
-                These experiences have impressed upon me the importance of
-                pursuing what you love and being truthful to yourself. I like to
-                work on projects that foster community development, promote
-                education and opportunities for people, or provide beneficial
-                services.
-              </p>
-              <p>
-                I enrolled in
-                <a href="https://thinkful.com" target="_blank">Thinkful</a> with
-                the interest of taking the first step towards a new career in
-                software development. I'm very excited to meet new people and
-                share new experiences in this new field of work!
-              </p>
+          <p class="first-blk">
+            These experiences have impressed upon me the importance of pursuing
+            what you love and being truthful to yourself. I like to work on
+            projects that foster community development, promote education and
+            opportunities for people, or provide beneficial services.
+          </p>
 
-              <p>
-                If you're looking to hire a new hard-working developer feel free
-                to <a href="#contact">contact me</a>! I'm sure I can employ my
-                experiences and the skills I'm sharpening at Thinkful to build
-                your digital product and move your project forward.
-              </p>
-            </div>
-          </div>
-          <div class="group group-interests">
-            <div class="item item-image">
+          <p class="third-blk">
+            I enrolled in
+            <a href="https://thinkful.com" target="_blank">Thinkful</a> with the
+            interest of taking the first step towards a new career in software
+            development. I'm very excited to meet new people and share new
+            experiences in this new field of work!
+          </p>
+
+          <p class="third-blk">
+            If you're looking to hire a new hard-working developer feel free to
+            <a href="#contact">contact me</a>! I'm sure I can employ my
+            experiences and the skills I'm sharpening at Thinkful to build your
+            digital product and move your project forward.
+          </p>
+
+          <div class="interests second-blk">
+            <div class="interests-img">
               <img src="images/guitarw.jpg" alt="My guitar." />
+              <h4>
+                <span>
+                  &nbsp;I also find <strong>joy</strong> &nbsp; <br />
+                  &nbsp;<em>hacking</em> at &nbsp; <br />
+                  &nbsp;my guitar. &nbsp;
+                </span>
+              </h4>
             </div>
-            <div class="item item-image">
+            <div class="interests-img">
               <img
                 src="images/juandiegopondw.jpg"
                 alt="Juan Diego pond in 'El Yunque'."
               />
+              <h4>
+                <span>
+                  &nbsp;I'm in &nbsp;<br />
+                  &nbsp;my <em>element</em> &nbsp;<br />
+                  &nbsp;when I'm <em>hiking</em>.&nbsp;
+                </span>
+              </h4>
             </div>
-            <div class="item item-image">
+          </div>
+          <div class="interests third-blk">
+            <div class="interests-img">
               <img
                 src="images/pinegrovebeach.gif"
                 alt="Pine grove beach in 'Isla Verde'."
               />
+              <h4>
+                <span>
+                  &nbsp;Some don't &nbsp;<br />
+                  &nbsp;like sand.&nbsp; <br />
+                  &nbsp;<em>I embrace it</em>.&nbsp;
+                </span>
+              </h4>
+            </div>
+            <div class="interests-img">
+              <img src="images/bike.jpg" alt="My MTB." />
+              <h4>
+                <span>
+                  &nbsp;I go cycling &nbsp;<br />
+                  &nbsp;when I want a &nbsp;<br />
+                  &nbsp;change of <em>pace</em>.&nbsp;
+                </span>
+              </h4>
             </div>
           </div>
-          <div class="group description">
-            <p>
-              When I'm not working on software I enjoy playing my guitar,
-              hiking, and going to the beach.
-            </p>
-          </div>
-          <!-- Possible examples of my work -->
         </section>
+        <!--Some placeholder examples of my work-->
         <section id="work">
-          <div class="group group-title">
-            <h2>Work</h2>
-          </div>
+          <h2>My Work</h2>
           <div class="group">
-            <div class="item">
+            <div class="item shadow-box">
               <img
                 src="images/small-business.jpg"
                 alt="Small business placeholder image."
               />
               <h3>Small Business Website</h3>
+              <p class="caption">(Placeholder)</p>
               <hr />
               <p>
                 Fullstack design for a small business website using html, css,
                 and JavaScript.
               </p>
-              <a href="https://github.com/wayfaringjou">Project Repo</a>
+              <a href="https://github.com/wayfaringjou" class="button"
+                >Project Repo</a
+              >
             </div>
-            <div class="item">
+            <div class="item shadow-box">
               <img
                 src="images/travel-app.jpg"
                 alt="Travel app placeholder image."
               />
               <h3>Traveling App</h3>
+              <p class="caption">(Placeholder)</p>
               <hr />
               <p>
                 Web application back-end using JavaScript for a traveling app
                 project.
               </p>
-              <a href="https://github.com/wayfaringjou">Project Repo</a>
+              <a href="https://github.com/wayfaringjou" class="button"
+                >Project Repo</a
+              >
             </div>
-          </div>
-          <div class="group">
-            <div class="item">
+            <div class="item shadow-box">
               <img
                 src="images/study-group.jpg"
                 alt="e-Learning app placeholder image."
               />
               <h3>e-Learning Platform</h3>
+              <p class="caption">(Placeholder)</p>
               <hr />
               <p>
                 Worked on documentation and writing tests to improve code base
                 quality.
               </p>
-              <a href="https://github.com/wayfaringjou">Project Repo</a>
+              <a href="https://github.com/wayfaringjou" class="button"
+                >Project Repo</a
+              >
             </div>
-            <div class="item">
+            <div class="item shadow-box">
               <img
                 src="images/weather.jpg"
                 alt="Weather app placeholder image."
               />
               <h3>Weather Tracking App</h3>
+              <p class="caption">(Placeholder)</p>
               <hr />
               <p>Full stack work with html, css and JavaScript.</p>
-              <a href="https://github.com/wayfaringjou">Project Repo</a>
+              <a href="https://github.com/wayfaringjou" class="button"
+                >Project Repo</a
+              >
             </div>
           </div>
         </section>
-        <!-- Contact Info -->
+        <!--Contact Info-->
         <section id="contact">
-          <div class="group group-title">
-            <h2>Contact me</h2>
-          </div>
+          <h2>Contact me</h2>
           <div class="group">
-            <div class="item item-double">
-              <p>Reach out! Feel free to contact me or follow:</p>
+            <div class="item item-form">
+              <h3>Reach out! Feel free to contact me:</h3>
+              <form action="https://formspree.io/f/myybepaq" method="POST">
+                <fieldset class="shadow-box">
+                  <legend class="button nohover">Send me a message</legend>
+                  <label for="fullName" class="caption">Name:</label>
+                  <input name="name" id="fullName" type="text" />
+                  <label for="emailAddress" class="caption">Your Email:</label>
+                  <input name="_replyto" id="emailAddress" type="email" />
+                  <label for="message" class="caption">Message:</label>
+                  <textarea name="message" id="message"></textarea>
+                  <button type="submit" class="button">Send</button>
+                </fieldset>
+              </form>
+            </div>
+            <div class="item item-social">
+              <h3>You can also contact or follow me in:</h3>
               <ul>
                 <li>
                   <a
@@ -214,26 +252,17 @@
                     ><img src="images/GitHub_Logo.png" alt="GitHub Logo icon."
                   /></a>
                 </li>
-                <li>
-                  <a href="mailto:wayfaringjou@gmail.com" target="_blank"
-                    ><img src="images/email.png" alt="Email envelope icon."
-                  /></a>
-                </li>
               </ul>
             </div>
-            <div class="item">
-              <div class="map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112664.092014643!2d-82.01739927703309!3d28.062569262904468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd38b2df0f0007%3A0x29d1320fb8a2d508!2sLakeland%2C%20FL%2C%20USA!5e0!3m2!1sen!2spr!4v1602061727502!5m2!1sen!2spr"
-                  width="360"
-                  height="360"
-                  style="border: 0"
-                  allowfullscreen=""
-                  aria-hidden="false"
-                  tabindex="0"
-                >
-                </iframe>
-              </div>
+            <div class="item item-map">
+              <h3>I'm located in Lakeland:</h3>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112664.092014643!2d-82.01739927703309!3d28.062569262904468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd38b2df0f0007%3A0x29d1320fb8a2d508!2sLakeland%2C%20FL%2C%20USA!5e0!3m2!1sen!2spr!4v1602061727502!5m2!1sen!2spr"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              >
+              </iframe>
             </div>
           </div>
         </section>
