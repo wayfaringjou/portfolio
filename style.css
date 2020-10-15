@@ -299,11 +299,12 @@ hr {
 #contact input,
 #contact textarea {
   width: 100%;
-  margin: 0 0 16px;
+  margin: 0 0 20px;
+  border: 1px solid #000;
 }
 
 #contact textarea {
-  height: 8rem;
+  height: 12rem;
 }
 
 #contact ul {
@@ -325,11 +326,17 @@ hr {
   max-height: 34px;
 }
 
+#contact .caption {
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+
 form input[type="text"],
 form input[type="email"],
 form textarea {
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  padding: 8px;
 }
 
 #contact form button {
@@ -472,13 +479,17 @@ footer h3 {
   }
 
   #contact .item-form {
-    width: 46%;
+    width: 100%;
     order: 1;
     margin: 0 32px 0 0;
   }
 
+  #contact fieldset {
+    padding: 32px;
+  }
+
   #contact .item-map {
-    width: 100%;
+    width: 48%;
     order: 3;
   }
 
