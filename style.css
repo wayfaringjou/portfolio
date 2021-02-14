@@ -181,6 +181,7 @@ hr {
   padding: 8px 12px;
   background-color: #000;
   color: #fff;
+  display: inline-block;
 }
 
 /* Section specific styling */
@@ -289,11 +290,16 @@ hr {
 
 #work .item {
   padding-bottom: 28px;
+  overflow: hidden;
 }
 
 #work .item h3 {
   font-size: 2.4rem;
   margin-bottom: 0;
+}
+
+#work .item > a + a {
+  margin-top: 0.5rem;
 }
 
 /* Contact Me */ 
@@ -403,7 +409,7 @@ footer h3 {
   }
 
   #work .item .button {
-    align-self: flex-end;
+    align-self: end;
   }
 
   #contact form button:hover {
